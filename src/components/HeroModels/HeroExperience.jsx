@@ -1,8 +1,11 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive'
+import { Room } from './Room';
+import HeroLights from './HeroLights';
 
 const HeroExperience = () => {
+  // menggunakan react-responsive untuk mendeteksi ukuran layar
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -12,10 +15,6 @@ const HeroExperience = () => {
     // sumbu [x, y, z] untuk posisi kamera
     // fov = seberapa lebar sudut pandang kamera
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}> 
-      {/* pencahayaan */}
-      <ambientLight intensity={0.2} color="1a1a40" />
-      {/* pencahayaan semacam matahari */}
-      <directionalLight position={[5, 5, 5]} intensity={5} />
 
       {/* orbit control untuk menggerakan kamera */}
       <OrbitControls 
@@ -28,10 +27,23 @@ const HeroExperience = () => {
       />
 
       {/* bentuk objek 3D, bentuk kubus [width, height, depth]  */}
-      <mesh>
+      {/* <mesh>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color="teal"/>
-      </mesh>
+      </mesh> */}
+
+      {/* pencahayaan */}
+      <HeroLights />
+      <group
+        scale={isMobile? 0.7 : 1}
+        position={[0, -3.5, 0]} // [x, y, z]
+        rotation={[0, Math.PI / 4, 0]} 
+      >
+          
+          <Room />
+      </group>
+
+      
     </Canvas>
   )
 }
