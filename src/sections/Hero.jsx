@@ -1,8 +1,11 @@
 import { words } from "../constants"
 import Button from "../components/Button"
+import HeroExperience from "../components/HeroModels/HeroExperience"
 
 const Hero = () => {
   return (
+
+    // ALL CSS in index.css
     <section id="hero" className="relative overflow-hidden">
         <div className="absolute top-0 left-0 z-10">
             <img src="/images/bg.png" alt="background" />
@@ -36,7 +39,7 @@ const Hero = () => {
                   <h1>Into Real Project</h1>
                   <h1>That Deliver Results</h1>
                 </div>
-                <p className="text-white-50 relative z-10 pointer-events-none md:text-xl">
+                <p className="text-white-50 xl:max-w-[700px] relative z-10 pointer-events-none md:text-xl">
                     Hi Namaku Faizz, aku seorang dveloper asal Indonesia dengan passion di bidang pemrograman web.
                 </p>
                 <Button
@@ -46,6 +49,12 @@ const Hero = () => {
                 />
               </div>
             </header>
+
+            <figure>
+              <div className="hero-3d-layout w-full h-full min-h-[50vh] absolute top-24 right-0 xl:w-[70%] xl:-top-20 xl:-right-20 ">
+                  <HeroExperience />
+              </div>
+            </figure>
         </div>
     </section>
   )

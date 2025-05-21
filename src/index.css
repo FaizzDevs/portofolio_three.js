@@ -202,11 +202,11 @@ section {
     }
   }
 
-  .cta-wrapper {
+  /* .cta-wrapper {
     @apply relative z-20 cursor-pointer;
-  }
+  } */
 
-  .cta-button {
+  /* .cta-button {
     @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
@@ -228,7 +228,7 @@ section {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
     }
-  }
+  } */
 
   .card-border {
     @apply border border-black-50 bg-black-100;
