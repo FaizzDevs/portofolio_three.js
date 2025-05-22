@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive'
 import { Room } from './Room';
 import HeroLights from './HeroLights';
+import Particles from './Particles';
 
 const HeroExperience = () => {
   // menggunakan react-responsive untuk mendeteksi ukuran layar
@@ -14,7 +15,7 @@ const HeroExperience = () => {
     //  canvas untuk rendering 3D model
     // sumbu [x, y, z] untuk posisi kamera
     // fov = seberapa lebar sudut pandang kamera
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}> 
+    <Canvas camera={{ position: [25, 0, 15], fov: 45 }}> 
 
       {/* orbit control untuk menggerakan kamera */}
       <OrbitControls 
@@ -34,6 +35,8 @@ const HeroExperience = () => {
 
       {/* pencahayaan */}
       <HeroLights />
+
+      <Particles count={1000} />
       <group
         scale={isMobile? 0.7 : 1}
         position={[0, -3.5, 0]} // [x, y, z]
