@@ -241,13 +241,13 @@ section {
     @apply md:w-40 w-32;
   } */
 
-  /* .timeline-wrapper {
+  .timeline-wrapper {
     @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
-  } */
+  }
 
-  /* .timeline {
+  .timeline {
     @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
-  } */
+  }
 
   .timeline-logo {
     @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
@@ -367,7 +367,7 @@ section {
 
 /* Hero Text slider ends */
 
-/* .gradient-line {
+.gradient-line {
   width: 2px;
   background: linear-gradient(
     0deg,
@@ -377,7 +377,7 @@ section {
     #fd5c79 62.83%,
     #6d45ce 92.91%
   );
-} */
+}
 
 .gradient-edge:nth-of-type(1) {
   left: 0;

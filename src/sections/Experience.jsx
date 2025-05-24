@@ -2,8 +2,33 @@ import React from 'react'
 import Titleheader from '../components/Titleheader'
 import { expCards } from '../constants'
 import Glowcards from '../components/Glowcards'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+  useGSAP(() => {
+    gsap.utils.toArray(".timeline-card").forEach((card) => {
+      gsap.from(card, {
+        xPercent: -100,
+        opacity: 0,
+        transformOrigin: "left left",
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+            trigger: card,
+            start: "top 80%"
+        }
+      })
+
+      gsap.to(".timeline", {
+        transformOrigin: "bottom bottom"
+      })
+    })
+  }, [])
+
   return (
     <section id="experience" className="w-full mt-20 section-padding px-5 md:px-10 md:mt-40 xl:px-0">
       <div className="w-full h-full px-5 md:px-20">
@@ -25,17 +50,31 @@ const Experience = () => {
 
                     <div className="xl:w-4/6">
                         <div className="flex items-start">
-                            <div className="timeline-wrapper">
+                            <div className="timeline-wrapper ">
                                 <div className="timeline" />
                                 <div className="gradient-line w-1 h-full" />
                             </div>
 
                             <div className="expText flex gap-5 relative z-20 md:gap-10 xl:gap-20">
-                                <div>
-                                  
+                                <div className="timeline-logo size-10 md:size-20 rounded-full overflow-hidden flex justify-center items-center border border-black-50 bg-white">
+                                    <img src={card.logoPath} alt="" />
+                                </div>
+
+                                <div >
+                                    <h1 className="font-semibold text-2xl">{card.title}</h1>
+                                    <p className="my-5 text-white-50">📅{card.date}</p>
+                                    <p className="italic text-white-50">Responsibilities</p>
+                                    <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                                        {card.responsibilities.map((responsibility) => (
+                                          <li key={responsibility} className="text-lg">
+                                              {responsibility}
+                                          </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
               ))}
