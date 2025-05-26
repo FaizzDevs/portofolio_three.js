@@ -9,25 +9,51 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+  // hook gsap
   useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
+    gsap.utils.toArray(".timeline-card").forEach((card) => { // mengambil semua elemen dan mengubah ke array
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
         transformOrigin: "left left",
         duration: 1,
-        ease: "power2.inOut",
+        ease: "power2.inOut", // lambat diawal dan akhir
         scrollTrigger: {
-            trigger: card,
+            trigger: card, // animasi dimulai ketika card muncul
             start: "top 80%"
         }
       })
 
       gsap.to(".timeline", {
-        transformOrigin: "bottom bottom"
+        transformOrigin: "bottom bottom",
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".timeline",
+          start: "top center",
+          end: "70% center",
+          onUpdate: (self) => { // callback saat scroll
+            gsap.to(".timeline", {
+              scaleY: 1 - self.progress // progress 0, scaleY 1 - progress 1, scaleY 0
+            })
+          }
+        }
       })
     })
-  }, [])
+
+    gsap.utils.toArray(".expText").forEach((text) => { // mengambil semua elemen dan mengubah ke array
+      gsap.from(text, {
+        xPercent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut", // lambat diawal dan akhir
+        scrollTrigger: {
+            trigger: text, // animasi dimulai ketika card muncul
+            start: "top 60%"
+        }
+      })
+    })
+    
+  }, []) // hanya dijalankan sekali []
 
   return (
     <section id="experience" className="w-full mt-20 section-padding px-5 md:px-10 md:mt-40 xl:px-0">
