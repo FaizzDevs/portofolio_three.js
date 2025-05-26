@@ -79,9 +79,9 @@ section {
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
   } */
 
-  .grid-12-cols {
+  /* .grid-12-cols {
     @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
-  }
+  } */
 
   /* .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;

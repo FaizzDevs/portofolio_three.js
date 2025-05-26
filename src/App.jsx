@@ -1,5 +1,6 @@
 import Logosection from "./components/Logosection"
 import Navbar from "./components/Navbar"
+import Contact from "./sections/Contact"
 import Experience from "./sections/Experience"
 import Featurecard from "./sections/Featurecard"
 import Hero from "./sections/Hero"
@@ -20,6 +21,7 @@ const App = () => {
         <Experience />
         <Techstack />
         <Testimonials />
+        <Contact />
     </>
   )
 }
