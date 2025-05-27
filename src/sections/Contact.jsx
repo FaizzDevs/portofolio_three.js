@@ -54,7 +54,7 @@ const Contact = () => {
                             className="w-full flex flex-col gap-7"
                         >
                           <div>
-                              <label htmlFor="name">Your Name</label>
+                              <label htmlFor="name" className="block text-white-50 mb-2">Your Name</label>
                               <input 
                                   type="text" 
                                   id="name"
@@ -62,13 +62,14 @@ const Contact = () => {
                                   value={form.name}
                                   onChange={handleChange}
                                   placeholder="Enter your name"
+                                  className="w-full px-4 py-4 bg-blue-100 rounded-md text-sm placeholder:text-blue-50 md:text-base"
                                   required
 
                               />
                           </div>
 
                           <div>
-                              <label htmlFor="email">Your Email</label>
+                              <label htmlFor="email" className="block text-white-50 mb-2">Your Email</label>
                               <input 
                                   type="email" 
                                   id="email"
@@ -76,13 +77,14 @@ const Contact = () => {
                                   value={form.email}
                                   onChange={handleChange}
                                   placeholder="What’s your email address?"
+                                  className="w-full px-4 py-4 bg-blue-100 rounded-md text-sm placeholder:text-blue-50 md:text-base"
                                   required
 
                               />
                           </div>
 
                           <div>
-                              <label htmlFor="name">Your Message</label>
+                              <label htmlFor="name" className="block text-white-50 mb-2">Your Message</label>
                               <input 
                                   type="message" 
                                   id="message"
@@ -90,13 +92,14 @@ const Contact = () => {
                                   value={form.message}
                                   onChange={handleChange}
                                   placeholder="How can I help you?"
+                                  className="w-full px-4 py-4 bg-blue-100 rounded-md text-sm placeholder:text-blue-50 md:text-base"
                                   rows="5"
                                   required
 
                               />
                           </div>
 
-                          <button type="submit">
+                          <button type="submit" disabled={loading}>
                               <div className="cta-button px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden group">
                                   <div className="bg-circle absolute -right-10 origin-center top-1/2 -translate-y-1/2 w-[120%] h-[120%] group-hover:size-10 group-hover:right-10 rounded-full bg-white-50 transition-all duration-500" />
                                       <p className="text text-black transition-all duration-500 group-hover:text-white-50 text-base font-bold group-hover:-translate-x-5 -translate-x-5 xl:translate-x-0 md:text-lg">
@@ -116,7 +119,7 @@ const Contact = () => {
 
                 <div className="min-h-96 xl:col-span-7">
                     <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-                        {/* <Contactexperience /> */}
+                        <Contactexperience />
                     </div>
                 </div>
             </div>
