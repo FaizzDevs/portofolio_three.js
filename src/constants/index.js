@@ -120,9 +120,9 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
+    name: "Docker",
+    modelPath: "/models/moby_dock_docker_whale.glb",
+    scale: 1.4,
     rotation: [0, 0, 0],
   },
   {
