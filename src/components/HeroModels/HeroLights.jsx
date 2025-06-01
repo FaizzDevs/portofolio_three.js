@@ -10,9 +10,9 @@ const HeroLights = () => {
 
         {/* pencahayaan dari atas */}
         <spotLight
-            position={[5, 8, -1]}
+            position={[0, 15, 0]}
             angle={0.15}
-            penumbra={0.2}
+            penumbra={2}
             intensity={100}
             color="white"
         />
@@ -21,12 +21,12 @@ const HeroLights = () => {
             position={[10, 8, -2]}
             angle={0.3}
             penumbra={0.5}
-            intensity={40}
+            intensity={100}
             color="#4cc9f0"
         />
 
         <spotLight
-            position={[10, 8, -2]}
+            position={[0, 8, 2]}
             angle={0.4}
             penumbra={1}
             intensity={60}

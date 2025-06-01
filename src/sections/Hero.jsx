@@ -28,7 +28,7 @@ const Hero = () => {
                 {/* hero-text */}
                 <div className="hero-text flex flex-col justify-center text-[30px] font-semibold relative z-10 pointer-events-none md:text-[60px]">
                   <h1>
-                    Shaping
+                    Membentuk
                     {/* slide */}
                     <span className="absolute pt-0 px-2 py-[30px] h-[48px] translate-y-0 overflow-hidden md:px-5 md:translate-y-1 xl:mt-6">
                       <span className="wrapper">
@@ -46,8 +46,8 @@ const Hero = () => {
                     </span>
                   </h1>
                   
-                  <h1>Into Real Project</h1>
-                  <h1>That Deliver Results</h1>
+                  <h1>Proyek Nyata</h1>
+                  <h1>Yang menghasilkan</h1>
                 </div>
                 <p className="text-white-50 xl:max-w-[700px] relative z-10 pointer-events-none md:text-xl">
                     Hi Namaku Faizz, aku seorang dveloper asal Indonesia dengan passion di bidang pemrograman web.

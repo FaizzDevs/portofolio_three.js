@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    name: "Work",
+    name: "Project",
     link: "#work",
   },
   {
@@ -12,103 +12,80 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
+    name: "Quotes",
     link: "#testimonials",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ide", imgPath: "/images/ideas.svg" },
+  { text: "Konsep", imgPath: "/images/concepts.svg" },
+  { text: "Desain", imgPath: "/images/designs.svg" },
+  { text: "Kode", imgPath: "/images/code.svg" },
+  { text: "Ide", imgPath: "/images/ideas.svg" },
+  { text: "Konsep", imgPath: "/images/concepts.svg" },
+  { text: "Desain", imgPath: "/images/designs.svg" },
+  { text: "Kode", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 1, suffix: "+", label: "Years of Experience" },
+  { value: 20, suffix: "+", label: "Projects Completed" },
+  { value: 13, suffix: "+", label: "Technologies Mastered" },
+  { value: 30, suffix: "+", label: "Code Commits" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/logo_mind.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/logo_kimia.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/logo-tokopedia.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/logo_mnc.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/logo_indomaret.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/Shopee.svg.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/logo_wings.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/logo_biznet.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/logo_mandiri.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/logo_bumn.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/logo_pertamina.png",
   },
 ];
 
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Fokus Kualitas",
+    desc: "Memberikan hasil berkualitas tinggi dengan tetap memperhatikan setiap detail.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Komunikasi yang Andal",
+    desc: "Menjaga Anda tetap mendapat informasi terkini pada setiap langkah untuk memastikan transparansi dan kejelasan.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
-];
-
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    title: "Tepat Waktu",
+    desc: "Memastikan proyek selesai sesuai jadwal, dengan kualitas dan perhatian terhadap detail.",
   },
 ];
 
@@ -147,39 +124,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam libero adipisci, repellat mollitia velit laudantium eligendi quos sint voluptates?",
+    imgPath: "/images/logos/Shopee.svg.png",
+    logoPath: "/images/Shopee_logo.svg.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam libero adipisci, repellat mollitia velit laudantium eligendi quos sint voluptates?",
+    imgPath: "/images/logos/logo_bumn.png",
+    logoPath: "/images/logo_bumn_kecil.png",
     title: "Full Stack Developer",
     date: "June 2020 - December 2023",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam libero adipisci, repellat mollitia velit laudantium eligendi quos sint voluptates?",
+    imgPath: "/images/logos/logo_wings.png",
+    logoPath: "/images/logos/logo_wings.png",
     title: "React Native Developer",
     date: "March 2019 - May 2020",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
     ],
   },
 ];
@@ -201,46 +178,46 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Najwa Shihab",
+    mentions: "@najwashihab",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Jangan hanya diam ketika sesuatu tidak benar. Diam itu bukan netral, diam adalah keberpihakan pada ketidakadilan. Kita mungkin tidak punya panggung besar, tapi setiap suara kita bisa jadi sumbu perubahan. Jangan remehkan pengaruh satu suara jernih di tengah kebisingan.",
+    imgPath: "/images/najwa_shihab.jpg",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Nadiem Makarim",
+    mentions: "@nadiemmakarim",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Jangan menunggu sempurna untuk mulai. Inovasi lahir dari keberanian mencoba, dari ketidaksempurnaan yang terus diperbaiki. Anak muda harus berani gagal, karena gagal adalah bagian dari proses menuju sukses. Dunia berubah terlalu cepat untuk hanya diam di zona nyaman.",
+    imgPath: "/images/nadiem.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Anies Baswedan",
+    mentions: "@aniesbaswedan",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Kita ingin anak-anak Indonesia tidak hanya pintar, tapi juga berintegritas. Karena kecerdasan tanpa karakter bisa menyesatkan. Pendidikan adalah tentang menumbuhkan manusia utuh: yang berpikir tajam, bekerja keras, dan punya hati nurani untuk sesama.",
+    imgPath: "/images/anies.jpg",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Ridwan Kamil",
+    mentions: "@ridwankamil",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Kalau kamu ingin perubahan, jadilah bagian dari solusi. Jangan hanya pandai mengeluh. Anak muda itu harus kreatif, bukan reaktif. Bangun kebaikan sekecil apa pun, karena perubahan besar selalu dimulai dari langkah kecil yang konsisten.",
+    imgPath: "/images/ridwan.jpg",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "William Tanuwijaya",
+    mentions: "@williamtanuwijaya",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Saya bukan dari keluarga kaya, saya tidak punya koneksi, saya hanya punya mimpi. Tapi saya percaya, dengan kerja keras dan ketekunan, mimpi sebesar apa pun bisa dikejar. Indonesia butuh lebih banyak pemimpi yang mau bekerja nyata, bukan hanya berharap.",
+    imgPath: "/images/william.jpg",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Deddy Corbuzier",
+    mentions: "@deddycorbuzier",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Kesuksesan itu bukan tentang siapa yang paling pintar atau paling kaya dari awal, tapi siapa yang paling tahan banting dan terus belajar. Banyak orang gagal bukan karena tidak punya potensi, tapi karena terlalu cepat menyerah. Jangan hidup untuk memuaskan orang lain — jadilah versi terbaik dari dirimu sendiri, bukan salinan dari ekspektasi orang lain",
+    imgPath: "/images/deddy.png",
   },
 ];
 
@@ -277,6 +254,5 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };

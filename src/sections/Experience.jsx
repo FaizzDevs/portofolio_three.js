@@ -69,7 +69,7 @@ const Experience = () => {
                     <div className="xl:w-2/6">
                         <Glowcards card={card} index={index}>
                           <div>
-                              <img src={card.imgPath} alt={card.title} />
+                              <img className="w-32 h-auto" src={card.imgPath} alt={card.title} />
                           </div>
                         </Glowcards>
                     </div>
@@ -83,7 +83,7 @@ const Experience = () => {
 
                             <div className="expText flex gap-5 relative z-20 md:gap-10 xl:gap-20">
                                 <div className="timeline-logo size-10 md:size-20 rounded-full overflow-hidden flex justify-center items-center border border-black-50 bg-white">
-                                    <img src={card.logoPath} alt="" />
+                                    <img className="w-12 h-12 object-contain" src={card.logoPath} alt="" />
                                 </div>
 
                                 <div >

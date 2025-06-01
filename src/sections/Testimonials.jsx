@@ -8,8 +8,8 @@ const Testimonials = () => {
     <section id="testimonials" className="flex-center flex justify-center items-center section padding px-5 mt-20 -mb-40 md:px-10 md:mt-40">
         <div className="w-full h-full md:px-10 px-5">
             <Titleheader 
-                title="What people say about me?"
-                sub="Client Feedback Highlight"
+                title="What people say?"
+                sub="Quotes of the day"
             />
 
             <div className="columns-1 md:columns-2 lg:columns-3 mt-16">
@@ -18,7 +18,7 @@ const Testimonials = () => {
                         <Glowcards card={{ review }}>
                             <div className='flex items-center gap-3'>
                                 <div>
-                                    <img src={imgPath} alt={name} />
+                                    <img className="w-14 h-14 rounded-full object-cover" src={imgPath} alt={name} />
                                 </div>
 
                                 <div>

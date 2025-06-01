@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import { Room } from './Room';
 import HeroLights from './HeroLights';
 import Particles from './Particles';
+import { Japanese } from './Japanese_room';
 
 const HeroExperience = () => {
   // menggunakan react-responsive untuk mendeteksi ukuran layar
@@ -43,7 +44,8 @@ const HeroExperience = () => {
         rotation={[0, Math.PI / 4, 0]} 
       >
           
-          <Room />
+          {/* <Room /> */}
+          <Japanese />
       </group>
 
       

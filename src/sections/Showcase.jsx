@@ -74,14 +74,14 @@ const Showcase = () => {
                     <div className="image-wrapper h-64 relative rounded-xl py-0 md:h-52 lg:h-72 xl:h-[37vh] xl:px-5 2xl:px-12 bg-amber-100">
                         <img className="w-full h-full object-contain rounded-xl" src="/images/project2.png" alt="Project 2" />
                     </div>
-                    <h2 className="text-lg font-semibold mt-5 md:text-xl lg:text-2xl">Library Management</h2>
+                    <h2 className="text-lg font-semibold mt-5 md:text-xl lg:text-2xl">Lorem, ipsum dolor.</h2>
                 </div>
 
                 <div ref={project3Ref} className="project">
                     <div className="image-wrapper h-64 relative rounded-xl py-0 md:h-52 lg:h-72 xl:h-[37vh] xl:px-5 2xl:px-12 bg-pink-100">
                         <img className="w-full h-full object-contain rounded-xl" src="/images/project3.png" alt="Project 3" />
                     </div>
-                    <h2 className="text-lg font-semibold mt-5 md:text-xl lg:text-2xl">Directory StartUp</h2>
+                    <h2 className="text-lg font-semibold mt-5 md:text-xl lg:text-2xl">Lorem, ipsum dolor.</h2>
                 </div>
             </div>
         </div>
